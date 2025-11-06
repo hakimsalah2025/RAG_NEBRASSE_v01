@@ -4,7 +4,7 @@
 """
 
 import streamlit as st
-import pg8000
+import psycopg2
 import os
 import json
 import math
@@ -30,7 +30,7 @@ MIN_ACCEPT = 0.8
 
 # ==================== أدوات عامة ====================
 def connect_db():
-    return pg8000.connect(**DB)
+    return psycopg2.connect(**DB)
 
 def cosine(a, b):
     if not a or not b or len(a) != len(b):

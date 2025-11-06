@@ -1,4 +1,0 @@
-streamlit
-pg8000
-requests
-python-dotenv
